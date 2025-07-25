@@ -1,0 +1,160 @@
+
+
+.container {
+    margin:  200px auto;
+    display: flex;
+    width: 1000px;
+    /* background-color: tomato; */
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image-container {
+    flex: 1;
+}
+
+.image {
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    vertical-align: middle;
+
+}
+.content {
+    padding: 10px 30px 10px 30px;
+   flex: 1;
+   position: relative;
+}
+.author-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+.author {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 2%;
+}
+.author-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(232, 231, 231);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+.share-icon {
+    width: 20px;
+    height: 20px;
+}
+.share-options {
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 110px;
+    right: -42px;
+    display: none;
+    background-color: rgb(84, 82, 133);
+}
+.share-options ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0; 
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.share-icn {
+    display: none;
+}
+.arrow-down {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(84, 82, 133);
+  }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+        margin: 100px auto;
+    }
+    .image-container {
+        width: 100%;
+        
+    }
+    .image {
+        border-radius: 20px 20px 0 0;
+    }
+    .author-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .author {
+        gap: 20px;
+    }
+    .content {
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+    }
+    .author-tab {
+        align-items: center;
+        padding-right: 30px;
+        
+    }
+    
+    .share-options {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        display: flex;
+        /* justify-content: center; */
+        margin-top: 10px;
+        border-radius: 0 0 10px 10px;
+    }
+    .share-options ul {
+        position: absolute;
+        bottom: 30px;
+        gap: 90px;
+
+    }
+    .share-icn {
+        display: block;
+        color: white;
+    }
+    .arrow-down {
+        display: none;
+    }
+    
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
